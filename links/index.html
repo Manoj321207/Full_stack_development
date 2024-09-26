@@ -7,6 +7,14 @@
 </head>
 <body>
     <p>anchor tag is used to link any file or website</p>
+
+    <ul>
+        <li><a href="#target">about target attribute</a></li>
+        <li><a href="#urls">Relative vs Absoulte URLs</a></li>
+        <li><a href="#links">about images,email,contact,button using link</a></li>
+        <li><a href="#download">Download link</a></li>
+    </ul>
+    <section id="target">
     <h3>about target attribute</h3>
     <h4>target- _self - open in same tab(default)</h4>
     <a href="https://github.com/Manoj321207" target="_self">My git hub account</a>
@@ -16,7 +24,29 @@
     <a href="https://github.com/Manoj321207" target="_parent">My git hub account</a>
     <h4>target- _top - open the document in full body of the window</h4>
     <a href="https://github.com/Manoj321207" target="_top">My git hub account</a>
+    </section>
+    <section id="urls">
+    <h3>above examples is also example for Absoulte URLs</h3><br>
+    <h3>Relative URLs</h3>
+    <a href="..\pract.html">practice page</a>
+    </section>
+    <section id="links">
+    <h3>Using images to link to other page</h3>
+    <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="youtube" width="50"></a>
+    <h3>Link to email address</h3>
+    <a href="mailto:manojjs207@gmail.com">send mail</a>
+    <h3>To provide contact imformation</h3>
+    <a href="tel:+916360915229">contact us</a>
+    <h3>Using button to link ohter website</h3>
+    <button onclick="document.location='https://www.youtube.com/'">Youtube</button>
+    </section>
+    <section id="download">
+    <h3>To download a file</h3>
+    <a href="youtube.png" download>click here to download</a>
+    </section><br><br>
+    <a href="#">Top</a>
     
+
 
 </body>
 </html>
