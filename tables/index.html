@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+</head>
+<body>
+    <h2>Time Table of Class B </h2>
+
+    <table border="2">
+        <tr>
+            <th>Days</th>
+            <th scope="col">
+                <time datetime="9:00">9 am</time>- <time datetime="10:00">10 am</time>
+            </th>
+            <th scope="col">
+                <time datetime="11:00">11 am</time>- <time datetime="11:30">11:30 am</time>
+            </th>
+            <th scope="col">
+                <time datetime="11:30">11:30 am</time>- <time datetime="12:30">12:30 pm</time>
+            </th>
+            <th scope="col">
+                <time datetime="12:30">12:30 pm</time>- <time datetime="1:30">1:30 pm</time>
+            </th>
+            <th scope="col">
+                <time datetime="1:30">1:30 pm</time>- <time datetime="2:30">2:30 pm</time>
+            </th>
+            <th scope="col">
+                <time datetime="2:30">2:30 pm</time>- <time datetime="3:30">3:30 pm</time>
+            </th>
+            <th scope="col">
+                <time datetime="3:30">3:30 pm</time>- <time datetime="4:30">4:30 pm</time>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">Monday</th>
+            <td>AI <br> (401)</td>
+            <td>CN <br> (401)</td>
+            <td rowspan="6">Break </td>
+            <td>FSD <br> (403)</td>
+            <td>SPM<br> (403)</td>
+            <td rowspan="6"> Lunch</td>
+            <td colspan="2">B2(CN, CSLAB-8) <br> B1(FSD,ISLAB-4)</td>
+        </tr>
+        <tr>
+            <th scope="row">Tuesday</th>
+            <td colspan="2"> </td>
+            <td>AI<br> (402)</td>
+            <td>ATC <br> (402)</td>
+            <td>CN<br> (308)</td>
+            <td>FSD <br> (308)</td>
+        </tr>
+        <tr>
+            <th scope="row">Wednesday</th>
+            <td colspan="2">B1(CN,CSLAB-8) <br> B3(FSD, CSLAB-5) </td>
+            <td>RM<br> (401)</td>
+            <td>AI <br> (401)</td>
+            <td colspan="2">B3(CN,CSLAB-8) <br> B2(FSD, CSLAB-5) </td>
+        </tr>
+        <tr>
+            <th scope="row">Thursday</th>
+            <td colspan="2">ATC Tutorial <br> B2(CSLAB-6) </td>
+            <td> ATC <br>(402)</td>
+            <td> RM <br>(402)</td>
+            <td> FSD<br>(402)</td>
+            <td> SPM <br>(402)</td>
+        </tr>
+        <tr></tr>
+            <th scope="row">Friday</th>
+            <td>EVS <br>(308) </td>
+            <td> CN <br>(308)</td>
+            <td colspan="2">ATC Tutorial <br> B1(CSLAB-6) </td>
+            <td>  ATC <br>(308)</td>
+            <td> SPM <br>(308)</td>
+        </tr>
+    </table>
+</body>
+</html>
