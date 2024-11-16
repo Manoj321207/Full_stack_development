@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action="https://httpbin.org/get">
+        <fieldset>
+            <legend>About You</legend>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname" required> <br><br>
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" required> <br><br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" required> <br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Imformation</legend>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="someone@gmail.com" required> <br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="1234567890" pattern="[0-9]{10}" required> <br> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+            <address>
+                <textarea name="address" id="address" rows="5" cols="70"></textarea>
+            </address>
+        </fieldset>
+        <fieldset>
+            <legend>Your Skills</legend>
+            <h4>Your good at</h4>
+            <input type="checkbox" name="skill" id="intrest_1" value="web_development">
+            <label for="intrest_1">Web Development</label> <br>
+            <input type="checkbox" name="skill" id="intrest_2" value="data_science">
+            <label for="intrest_2">Data Science</label> <br>
+            <input type="checkbox" name="skill" id="intrest_3" value="cloud_computing">
+            <label for="intrest_3">Cloud_Computing</label> <br>
+            <input type="checkbox" name="skill" id="intrest_4" value="machine_learning">
+            <label for="intrest_4">Machine Learning</label> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Companies</legend>
+            <label for="companies">Select the company you want work:</label> <br>
+            <select name="companies" id="companies">
+                <option value="some"> 
+                    Select the company
+                </option>
+                <option value="TCS">TCS</option>
+                <option value="Google">Google</option>
+                <option value="Amazon">Amazon</option>
+                <option value="Flipcart">Flipcart</option>
+                <option value="Swiggy">Swiggy</option>
+                <option value="AWS">AWS</option>
+                <option value="Infosys">Infosys</option>
+                <option value="Microsoft">Microsoft</option>
+            </select>
+        </fieldset>
+        <pre>
+            <button type="submit">Submit</button>             <button type="reset">Reset</button>
+        </pre>
+    </form>
+</body>
+</html>
